@@ -1,0 +1,8 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="petal length (cm) <= 2.45\ngini = 0.667\nsamples = 135\nvalue = [45, 44, 46]\nclass = virginica", fillcolor="#8139e503"] ;
+1 [label="gini = 0.0\nsamples = 45\nvalue = [45, 0, 0]\nclass = setosa", fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.5\nsamples = 90\nvalue = [0, 44, 46]\nclass = virginica", fillcolor="#8139e50b"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
